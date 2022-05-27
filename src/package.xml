@@ -5,12 +5,24 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Assign_6__c</members>
+        <members>Assignment_5__c</members>
+        <members>Broker__c</members>
+        <members>Demo1__c</members>
+        <members>Demo2__c</members>
+        <members>Demo3__c</members>
+        <members>Demo4__c</members>
+        <members>Demo__c</members>
+        <members>Dreamworld__c</members>
+        <members>Energy_Audit1__c</members>
+        <members>Energy_Audit__c</members>
+        <members>Property__c</members>
+        <members>myobj__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
         <name>CustomTab</name>
     </types>
-    <version>54.0</version>
+    <version>53.0</version>
 </Package>
