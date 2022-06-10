@@ -1,5 +1,6 @@
 public class Hello {
     public static string helloMessage() {
+    system.debug('hello debug');
     return('hello guys"');
     }
     public static string helloMessage1() {
