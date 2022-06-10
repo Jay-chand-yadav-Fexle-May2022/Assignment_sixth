@@ -3,7 +3,7 @@ public class Teacher {
         Teacher__c teacher = new Teacher__c();
         
         // Student Personal Info
- 	 	teacher.Name = 'Michel';
+ 	teacher.Name = 'Michel';
         teacher.Roll_Number__c = 80;
         teacher.Father_Name__c = 'Finch';
         teacher.Mobile_Number__c = '894590340';
@@ -41,7 +41,7 @@ public class Teacher {
 		
         // Fetch students records from UI
         public static void fetchRecords() {
- 			List<Teacher__c> records = [ SELECT id, Name, Roll_Number__c, Father_Name__c, Mobile_Number__c, Father_Mobile_Number__c, HomePhone__c, Email__c, Address__c, Overall_Grade__c, Stream__c,  Class__c, Section__c, Current_Year__c, Fees_Submitted__c, Pending_Fees_Amount__c, Pending_Exam_Fees__c, Exam_Fees_Submitted__c from Teacher__c order by createdDate DESC LIMIT 8];
+ 		List<Teacher__c> records = [ SELECT id, Name, Roll_Number__c, Father_Name__c, Mobile_Number__c, Father_Mobile_Number__c, HomePhone__c, Email__c, Address__c, Overall_Grade__c, Stream__c,  Class__c, Section__c, Current_Year__c, Fees_Submitted__c, Pending_Fees_Amount__c, Pending_Exam_Fees__c, Exam_Fees_Submitted__c from Teacher__c order by createdDate DESC LIMIT 8];
   	    	for(Teacher__c student : records) {
         	system.debug('Check Student Records : '+ student);
         	}
