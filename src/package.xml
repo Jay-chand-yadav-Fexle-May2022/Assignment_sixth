@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Ap</members>
+    <members>Ap</members>
 	<members>Assign_5</members>
 	<members>Assign_6</members>
 	<members>Demo5Class</members>
@@ -18,6 +18,9 @@
 	<members>SampleFailingTestClass</members>
 	<members>Student</members>
 	<members>Teacher</members>
+	<members>HelloWorldTestClass</members>
+	<members>MyHelloWorld</members>
+	<members>Patternprinting</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -45,6 +48,7 @@
 	<members>Subject__c</members>
 	<members>Teacher1__c</members>
 	<members>Year_Of_Class__c</members>
+	<members>Book__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -64,6 +68,7 @@
 	<members>Teacher__c</members>
 	<members>Teacher1__c</members>
 	<members>Year_Of_Class__c</members>
+	<members>Book__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -77,6 +82,10 @@
     <types>
         <members>*</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
 </Package>
