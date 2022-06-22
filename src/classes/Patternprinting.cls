@@ -2,23 +2,21 @@ public class Patternprinting {
     public static void leftTrianglePascals() {
         String str = '';
         Integer n = 5;
-        Integer space = n*2-2;
         for(Integer i=1;i<=n;i++) {
 
-            for(Integer j=1;j<=space;j++) {
+            for(Integer j=1;j<=n-i;j++) {
                 str += '_';
             }
 
             for(Integer k=1;k<=i;k++) {
-                str += '*_';
+                str += '*';
             }
             
             system.debug(str);
-            space = space - 2;
             str = '';
         }
-	str = '';
-        space = space + 4;
+		str = '';
+        Integer space = 1;
         for(Integer i=n-1;i>0;i--) {
 
             for(Integer j=1;j<=space;j++) {
@@ -26,11 +24,11 @@ public class Patternprinting {
             }
 
             for(Integer k=1;k<=i;k++) {
-                str += '*_';
+                str += '*';
             }
             
             system.debug(str);
-            space = space + 2;
+            space++;
             str = '';
         }
     }
