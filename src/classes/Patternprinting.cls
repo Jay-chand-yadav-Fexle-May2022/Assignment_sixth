@@ -17,7 +17,7 @@ public class Patternprinting {
             space = space - 2;
             str = '';
         }
-		str = '';
+	str = '';
         space = space + 4;
         for(Integer i=n-1;i>0;i--) {
 
