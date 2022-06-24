@@ -21,6 +21,8 @@
 	<members>HelloWorldTestClass</members>
 	<members>MyHelloWorld</members>
 	<members>Patternprinting</members>
+	<members>Datatypes</members>
+	<members>StudentRecord</members>
         <name>ApexClass</name>
     </types>
     <types>
