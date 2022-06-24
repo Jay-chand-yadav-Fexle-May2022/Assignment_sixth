@@ -38,7 +38,7 @@ public class Datatypes {
      *
      *   @revision Log   :   V1.1 - Created  - 24/06/2022 - Developer Name - Jay Chand Yadav
      **/
-	public static void allDateTypes() {
+     public static void allDateTypes() {
     
         //addDays(additionalDays)
         Date myDate = Date.newInstance(1960, 2, 17);
