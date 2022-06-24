@@ -4,11 +4,11 @@
         <apexClass>Ap</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-	<classAccesses>
+    <classAccesses>
         <apexClass>Datatypes</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-	<classAccesses>
+    <classAccesses>
         <apexClass>StudentRecord</apexClass>
         <enabled>true</enabled>
     </classAccesses>
