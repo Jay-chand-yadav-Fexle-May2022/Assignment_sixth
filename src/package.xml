@@ -22,6 +22,8 @@
 	<members>MyHelloWorld</members>
 	<members>Patternprinting</members>
         <name>ApexClass</name>
+		<members>Datatypes</members>
+		<members>StudentRecord</members>
     </types>
     <types>
         <members>Assign_6__c</members>
