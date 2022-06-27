@@ -267,8 +267,15 @@ public with sharing class Operators {
     **/
     public class SafeNavigator {
 
+        // Safe Navigator
         public void SafeNavigator_1() {
 
+            // a?.b    Evaluates to: a == null ? null : a.b
+            Integer a = null; 
+            Integer b = 5;
+            System.debug('ternary operator -> ' + a == null ? a : b);       // Ternary Operator
+            // System.debug('Safe Operator -> ' + a?.b);
+            
             Account acc = new Account();
             acc.Name = 'test';
             insert acc;
