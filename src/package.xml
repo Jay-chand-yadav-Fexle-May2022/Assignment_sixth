@@ -24,6 +24,13 @@
         <name>ApexClass</name>
 		<members>Datatypes</members>
 		<members>StudentRecord</members>
+		<members>CallByValueAndReference</members>
+		<members>Conditional</members>
+		<members>Constructor</members>
+		<members>Loops</members>
+		<members>MethodOverLoading</members>
+		<members>MethodOverRiding</members>
+		<members>StudentDataProvider</members>
     </types>
     <types>
         <members>Assign_6__c</members>
