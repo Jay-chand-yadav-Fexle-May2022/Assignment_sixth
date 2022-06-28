@@ -26,6 +26,9 @@
     </classAccesses>
     <classAccesses>
         <apexClass>StudentDataProvider</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Operators</apexClass>
         <enabled>true</enabled>
     </classAccesses>
