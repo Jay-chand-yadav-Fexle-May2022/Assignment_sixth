@@ -12,8 +12,36 @@
         <apexClass>SuperKeyword</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
+     <classAccesses>
         <apexClass>ThisKeywordAndInstanceofKeyword</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>   
+    <classAccesses>
+        <apexClass>CallByValueAndReference</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Conditional</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Constructor</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Loops</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MethodOverLoading</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MethodOverRiding</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>StudentDataProvider</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
