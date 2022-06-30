@@ -22,9 +22,13 @@
 	<members>MyHelloWorld</members>
 	<members>Patternprinting</members>
 	<members>Operators</members>
-        <name>ApexClass</name>
 		<members>Datatypes</members>
 		<members>StudentRecord</members>
+		<members>CountryStateAndDistrict</members>
+        <members>DiscountOnProduct</members>
+        <members>SuperKeyword</members>
+        <members>ThisKeywordAndInstanceofKeyword</members>
+		<name>ApexClass</name>
     </types>
     <types>
         <members>Assign_6__c</members>
