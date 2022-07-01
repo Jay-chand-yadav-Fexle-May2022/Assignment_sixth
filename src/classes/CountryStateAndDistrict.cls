@@ -24,7 +24,7 @@ public with sharing class CountryStateAndDistrict {
         for(String country_1 : country.keySet()) {
             if(country_1.equals('India')) {
 
-                for(String state_1 : state.keySet()) {
+                for(String state_1 : country.get(country_1).keySet()) {
                     if(state_1.equals('Uttar Pradesh')) {
 
                         for(String district_1 : district) {
