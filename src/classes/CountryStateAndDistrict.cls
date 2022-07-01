@@ -30,7 +30,7 @@ public with sharing class CountryStateAndDistrict {
                         for(String district_1 : district) {
                             Integer[] chars = district_1.getChars();
 
-                            if((chars[0] == 83 || chars[0] == 115) && district_1.length() > 8) {
+                            if((district_1.startsWith('S') || district_1.startsWith('s')) && district_1.length() > 8) {
                                 System.debug(district_1);
                             }
                         }
