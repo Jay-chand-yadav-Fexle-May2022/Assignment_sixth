@@ -21,17 +21,20 @@ public with sharing class CountryStateAndDistrict {
 
         country.put('India', state);
 
-        for(String country_1 : country.keySet()) {
-            if(country_1.equals('India')) {
+        if(!country.isEmpty()) {
 
-                for(String state_1 : country.get(country_1).keySet()) {
-                    if(state_1.equals('Uttar Pradesh')) {
+            for(String country_1 : country.keySet()) {
+                if(country_1.equals('India')) {
 
-                        for(String district_1 : district) {
-                            Integer[] chars = district_1.getChars();
+                    for(String state_1 : country.get(country_1).keySet()) {             
+                        if(state_1.equals('Uttar Pradesh')) {
 
-                            if((district_1.startsWith('S') || district_1.startsWith('s')) && district_1.length() > 8) {
-                                System.debug(district_1);
+                            for(String district_1 : district) {
+                                Integer[] chars = district_1.getChars();
+
+                                if((district_1.startsWith('S') || district_1.startsWith('s')) && district_1.length() > 8) {
+                                    System.debug(district_1);
+                                }
                             }
                         }
                     }
