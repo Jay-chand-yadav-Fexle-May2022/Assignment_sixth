@@ -2,9 +2,9 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>Ap</members>
-	<members>Assign_5</members>
+ 	<members>Assign_5</members>
 	<members>Assign_6</members>
-	<members>Demo5Class</members>
+        <members>Demo5Class</members>
 	<members>Demo7Class</members>
 	<members>Democlass4</members>
 	<members>DemoSampleClass</members>
@@ -22,7 +22,13 @@
 	<members>MyHelloWorld</members>
 	<members>Patternprinting</members>
 	<members>Operators</members>
-        <name>ApexClass</name>
+	<members>Datatypes</members>
+	<members>StudentRecord</members>
+	<members>CountryStateAndDistrict</members>
+        <members>DiscountOnProduct</members>
+        <members>SuperKeyword</members>
+        <members>ThisKeywordAndInstanceofKeyword</members>
+	<name>ApexClass</name>
 	<members>Datatypes</members>
 	<members>StudentRecord</members>
 	<members>CallByValueAndReference</members>

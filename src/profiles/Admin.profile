@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
+        <apexClass>CountryStateAndDistrict</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DiscountOnProduct</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SuperKeyword</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+     <classAccesses>
+        <apexClass>ThisKeywordAndInstanceofKeyword</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>   
+    <classAccesses>
         <apexClass>CallByValueAndReference</apexClass>
         <enabled>true</enabled>
     </classAccesses>
