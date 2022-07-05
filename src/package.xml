@@ -38,6 +38,8 @@
 	<members>MethodOverLoading</members>
 	<members>MethodOverRiding</members>
 	<members>StudentDataProvider</members>
+	<members>CountryCodeCountryNameStateNameDistricts</members>
+    <members>InsertRecord</members>
     </types>
     <types>
         <members>Assign_6__c</members>
