@@ -9,6 +9,22 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CountryStateAndDistrict</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DiscountOnProduct</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SuperKeyword</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+     <classAccesses>
+        <apexClass>ThisKeywordAndInstanceofKeyword</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>   
+    <classAccesses>
         <apexClass>CallByValueAndReference</apexClass>
         <enabled>true</enabled>
     </classAccesses>
