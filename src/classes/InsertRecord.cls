@@ -7,9 +7,9 @@
 *
 *  Revision Logs   :    V1.0 - Created - jay Chand Yadav
 **/
-public with sharing class InsertRecord {
+public with sharing class insertAccountRecord {
 
-    public InsertRecord() {
+    public insertAccountRecord() {
 
         Account acc = new Account();
         acc.Name = 'Smith';
