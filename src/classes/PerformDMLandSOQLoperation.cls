@@ -177,6 +177,8 @@ public with sharing class PerformDMLandSOQLoperation {
     **/
     public static void createParentChildRecordSingleStatementUsingForeignKey() {
 
+	Account accountObj = new Account(Name='Hallie', SLASerialNumber__c='SAP111115');
+        insert accountObj;
         Date dt = Date.today();
         dt = dt.addDays(7);
         Opportunity newOpportunity = new Opportunity(
@@ -188,15 +190,15 @@ public with sharing class PerformDMLandSOQLoperation {
         // Used only for foreign key reference
         // and doesn't contain any other fields.
         Account accountReference = new Account(
-            SLASerialNumber__c='SAP111114');           // The id shouldn't be exit on account    
+            SLASerialNumber__c='SAP111115');           // The id shouldn't be exit on account    
         newOpportunity.Account = accountReference;
         
         // Create the Account object to insert.
         // Same as above but has Name field.
         // Used for the insert.
-        Account parentAccount = new Account(
-            Name='Hallie',
-            SLASerialNumber__c='SAP111114');            // The id shouldn't be exit on account 
+        // Account parentAccount = new Account(
+        // Name='Hallie',
+        // SLASerialNumber__c='SAP111114');            
         
         // Create the account and the opportunity.
         Database.SaveResult[] results = Database.insert(new SObject[] {
