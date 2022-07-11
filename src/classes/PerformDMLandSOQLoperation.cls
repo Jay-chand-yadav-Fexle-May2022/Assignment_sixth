@@ -49,7 +49,7 @@ public with sharing class PerformDMLandSOQLoperation {
                     	if(('Account '+ i).equals(acc.Name)) {
                         	accountDelete.add(acc);
                     	}
-                	}
+                    }
                 }               
             }
             delete accountDelete;
@@ -78,8 +78,7 @@ public with sharing class PerformDMLandSOQLoperation {
                             accountObj.add(ab);
                         }
                     }
-                }
-                
+                }  
             }
             update accountObj;
         }
