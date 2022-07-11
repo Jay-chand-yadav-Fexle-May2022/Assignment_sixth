@@ -147,6 +147,8 @@ public with sharing class PerformDMLandSOQLoperation {
     **/
     public static void insertOpportunityWithAccountReference() {
 
+	Account accountObject = new Account(SLASerialNumber__c='SAP111113', Name='Mark');
+        insert accountObject;
         Opportunity newOpportunity = new Opportunity(
         Name='OpportunityWithAccountInsert',
         StageName='Prospecting',
@@ -157,7 +159,7 @@ public with sharing class PerformDMLandSOQLoperation {
         // This sObject is used only for foreign key reference
         // and doesn't contain any other fields.
         Account accountReference = new Account(
-        SLASerialNumber__c='SAP111112'); // The id should be exist on account otherwise it won't work
+        SLASerialNumber__c='SAP111113'); // The id should be exist on account otherwise it won't work
 
         // Add the account sObject to the opportunity.
         newOpportunity.Account = accountReference;
