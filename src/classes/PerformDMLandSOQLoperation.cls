@@ -121,8 +121,8 @@ public with sharing class PerformDMLandSOQLoperation {
         try {
             merge masterAcct mergeAcct;
         } catch (DmlException e) {
-        // Process exception
-        System.debug('An unexpected error has occurred: ' + e.getMessage()); 
+            // Process exception
+            System.debug('An unexpected error has occurred: ' + e.getMessage()); 
         }
 
         // Once the account is merged with the master account,
