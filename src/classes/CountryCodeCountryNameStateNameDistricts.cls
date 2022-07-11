@@ -85,19 +85,27 @@ public with sharing class CountryCodeCountryNameStateNameDistricts {
     public static void findCountryCodeNameStateAndDistricts(Map<String, Map<String, Map<String, List<String>>>> countryCodeNameStateAndDistrict, String countryCode, String countryName_1, String  stateName, String startWithChar) {
 
         // Find the code, country name, states and districts
-        for(String code : countryCodeNameStateAndDistrict.keySet()) {
-            if(code.equals(countryCode)) {
+        if(!countryCodeNameStateAndDistrict.isEmpty()) {
+            for(String code : countryCodeNameStateAndDistrict.keySet()) {
+                if(code.equals(countryCode)) {
+                
+                    if(!countryCodeNameStateAndDistrict.get(code).isEmpty()) {
+                        for(String countryNames : countryCodeNameStateAndDistrict.get(code).keySet()) {
+                            if(countryNames.equals(countryName_1)) {
 
-                for(String countryNames : countryCodeNameStateAndDistrict.get(code).keySet()) {
-                    if(countryNames.equals(countryName_1)) {
+                                if(!countryCodeNameStateAndDistrict.get(code).get(countryNames).isEmpty()) {
+                                    for(String stateNames : countryCodeNameStateAndDistrict.get(code).get(countryNames).keySet()) {
+                                        if(stateNames.equals(stateName)) {  
 
-                        for(String stateNames : countryCodeNameStateAndDistrict.get(code).get(countryNames).keySet()) {
-                            if(stateNames.equals(stateName)) {  
+                                            if(!countryCodeNameStateAndDistrict.get(code).get(countryNames).isEmpty()) {
+                                                for(String districtName : countryCodeNameStateAndDistrict.get(code).get(countryNames).get(stateNames)) {  
 
-                                for(String districtName : countryCodeNameStateAndDistrict.get(code).get(countryNames).get(stateNames)) {  
-
-                                    if(districtName.toUppercase().startsWith(startWithChar.toUppercase()) && districtName.length() >= 5) {
-                                        System.debug(districtName);
+                                                    if(districtName.toUppercase().startsWith(startWithChar.toUppercase()) && districtName.length() >= 5) {
+                                                        System.debug(districtName);
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
