@@ -39,8 +39,7 @@
 	<members>MethodOverRiding</members>
 	<members>StudentDataProvider</members>
 	<members>CountryCodeCountryNameStateNameDistricts</members>
-    <members>InsertRecord</members>
-	<members>PerformDMLandSOQLoperation</members>
+        <members>InsertRecord</members>
     </types>
     <types>
         <members>Assign_6__c</members>
