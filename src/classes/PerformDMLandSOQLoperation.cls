@@ -16,18 +16,16 @@ public with sharing class PerformDMLandSOQLoperation {
     *
     *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
     **/
-    public static void InsertAccountRecords() {
+    public static void insertAccountRecords() {
 
-        List<Account> accountObj = new List<Account>();
+        List<Account> listOfAccountRecords = new List<Account>();
         Account accInsert;
         for(Integer i=1; i<=10; i++) {
             accInsert = new Account();
             accInsert.Name = 'Account ' + i;
-            accountObj.add(accInsert);
+            listOfAccountRecords.add(accInsert);
         }
-        insert accountObj;
-        PerformDMLandSOQLoperation.deleteAccountRecords(accountObj);
-        PerformDMLandSOQLoperation.updateAccountRecords(accountObj);
+        insert listOfAccountRecords;
     }
 
     /**
@@ -37,23 +35,15 @@ public with sharing class PerformDMLandSOQLoperation {
     *
     *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
     **/
-    public static void deleteAccountRecords(List<Account> accObj) {
+    public static void deleteAccountRecords() {
  
-        if(!accObj.isEmpty()) {
-			List<Account>  accountDelete = new List<Account>();
-            for(Integer i = 1; i <= 5; i++)
-            {
-                List<Account> accountObject = [SELECT Id, name from Account WHERE name =:'Account '+i];
-                if(!accountObject.isEmpty()) {
-                    for(Account acc: accountObject) {
-                    	if(('Account '+ i).equals(acc.Name)) {
-                        	accountDelete.add(acc);
-                    	}
-                    }
-                }               
-            }
-            delete accountDelete;
+	List<Account>  listOfAccountRecords = new List<Account>();
+        for(Account acc : [SELECT Id, name from Account WHERE name IN ('Account 1', 'Account 2', 'Account 3', 'Account 4', 'Account 5')])
+        {
+            listOfAccountRecords.add(acc);     
+            System.debug(acc);
         }
+        delete listOfAccountRecords;
     }
 
     /**
@@ -63,25 +53,20 @@ public with sharing class PerformDMLandSOQLoperation {
     *
     *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
     **/
-    public static void updateAccountRecords(List<Account> accObj1) {
+    public static void updateAccountRecords() {
 
-        List<Account> accountObj = new List<Account>();
-        if(!accObj1.isEmpty()) {
-
-            for(Integer i = 6; i <= 10; i++)
-            {
-                List<Account> accountObject = [SELECT Id, name from Account WHERE name =:'Account '+i];
-                if(!accountObject.isEmpty()) {
-                    for(Account ab: accountObject) {
-                        if(('Account '+ i).equals(ab.Name)) {
-                            ab.Name = 'Account ' + (i - 5);      // Change the account name
-                            accountObj.add(ab);
-                        }
-                    }
-                }  
-            }
-            update accountObj;
-        }
+        List<Account> listOfAccountRecords = new List<Account>();
+        for(Account acc : [SELECT Id, Name from Account WHERE name IN ('Account 6', 'Account 7', 'Account 8', 'Account 9', 'Account 10')])
+        {
+            for(Integer i = 6; i <= 10; i++) {
+                if(('Account '+i).equals(acc.Name)) {
+                    acc.Name = 'Account ' + (i - 5);
+                    listOfAccountRecords.add(acc);
+                    System.debug(acc);
+                }
+            }      
+        } 
+        update listOfAccountRecords;
     }
 
     /**
