@@ -86,7 +86,6 @@ public with sharing class PerformDMLandSOQLoperation {
                 con.Description = 'New description';
                 updateList.add(con);
             }
-
             else {
                 Contact newContact = new Contact(department = 'Other',lastName = 'Smith');
                 updateList.add(newContact);
@@ -104,11 +103,11 @@ public with sharing class PerformDMLandSOQLoperation {
     **/
     public static void mergeAccounts() {
         // Insert new accounts
-        List<Account> ls = new List<Account>{
+        List<Account> listOfAccountRecords = new List<Account>{
             new Account(name='Acme Inc.'),
             new Account(name='Acme')
         };                                        
-        insert ls;
+        insert listOfAccountRecords;
 
         // Queries to get the inserted accounts 
         Account masterAcct = [SELECT Id, Name FROM Account WHERE Name = 'Acme Inc.' LIMIT 1];
