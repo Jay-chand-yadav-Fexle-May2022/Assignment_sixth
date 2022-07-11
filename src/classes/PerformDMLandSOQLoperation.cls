@@ -127,7 +127,9 @@ public with sharing class PerformDMLandSOQLoperation {
         // Once the account is merged with the master account,
         // the related contact should be moved to the master record.
         masterAcct = [SELECT Id, Name, (SELECT FirstName,LastName From Contacts) 
-                     FROM Account WHERE Name = 'Acme Inc.' LIMIT 1];
+                     FROM Account 
+		     WHERE Name = 'Acme Inc.' 
+		     LIMIT 1];
         System.assert(masterAcct.get(0).getSObjects('Contacts').size() > 0);
         System.assertEquals('Joe', masterAcct.get(0).getSObjects('Contacts')[0].get('FirstName'));
         System.assertEquals('Merged', masterAcct.get(0).getSObjects('Contacts')[0].get('LastName'));
@@ -185,11 +187,8 @@ public with sharing class PerformDMLandSOQLoperation {
             StageName='Prospecting',
             CloseDate=dt);
         
-        // Create the parent reference.
-        // Used only for foreign key reference
-        // and doesn't contain any other fields.
         Account accountReference = new Account(
-            SLASerialNumber__c='SAP111115');           // The id shouldn't be exit on account    
+            SLASerialNumber__c='SAP111115');             
         newOpportunity.Account = accountReference;
         
         // Create the Account object to insert.
