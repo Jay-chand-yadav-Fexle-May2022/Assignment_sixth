@@ -25,38 +25,68 @@ public with sharing class PerformDMLandSOQLoperation {
             accInsert.Name = 'Account ' + i;
             listOfAccountRecords.add(accInsert);
         }
-        insert listOfAccountRecords;
+        if(!listOfAccountRecords.isEmpty()) {
+	    insert listOfAccountRecords;
+	}
     }
 
     /**
-    *   @description    :  Delete one to five records which name is start with Account 
+    *   @description    :   Account records for deletion
     *
     *   @return         :   void
     *
     *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
     **/
-    public static void deleteAccountRecords() {
+    public static void recordSetOfDeletion() {
+        
+        Set<String> setOfDeletionRecord = new Set<String>{'Account 1', 'Account 2', 'Account 3', 'Account 4', 'Account 5'};
+        deleteAccountRecords(setOfDeletionRecord);
+    }
+    
+    /**
+    *   @description    :  Delete account records 
+    *
+    *   @return         :   void
+    *
+    *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
+    **/
+    public static void deleteAccountRecords(Set<String> namesOfAccount) {
  
 	List<Account>  listOfAccountRecords = new List<Account>();
-        for(Account acc : [SELECT Id, name from Account WHERE name IN ('Account 1', 'Account 2', 'Account 3', 'Account 4', 'Account 5')])
+        for(Account acc : [SELECT Id, name from Account WHERE name IN :namesOfAccount])
         {
             listOfAccountRecords.add(acc);     
             System.debug(acc);
         }
-        delete listOfAccountRecords;
+        if(!listOfAccountRecords.isEmpty()) {
+	    delete listOfAccountRecords;
+	}
     }
 
     /**
-    *   @description    :  Update five accounts name who end with Account 6 to 10 value 
+    *   @description    :   Account Records for updation
     *
     *   @return         :   void
     *
     *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
     **/
-    public static void updateAccountRecords() {
+	
+    public static void recordSetOfUpdation() {
+        
+        Set<String> setOfUpdationRecord = new Set<String>{'Account 6', 'Account 7', 'Account 8', 'Account 9', 'Account 10'};
+        updateAccountRecords(setOfUpdationRecord);
+    }
+    /**
+    *   @description    :  Update Account records the parameters passed by another method
+    *
+    *   @return         :   void
+    *
+    *   @revision Log   :   V1.1 - Created  - 11/07/2022 - Developer Name - Jay Chand Yadav
+    **/
+    public static void updateAccountRecords(Set<String> namesOfAccountRecords) {
 
         List<Account> listOfAccountRecords = new List<Account>();
-        for(Account acc : [SELECT Id, Name from Account WHERE name IN ('Account 6', 'Account 7', 'Account 8', 'Account 9', 'Account 10')])
+        for(Account acc : [SELECT Id, Name from Account WHERE name IN :namesOfAccountRecords])
         {
             for(Integer i = 6; i <= 10; i++) {
                 if(('Account '+i).equals(acc.Name)) {
@@ -66,7 +96,9 @@ public with sharing class PerformDMLandSOQLoperation {
                 }
             }      
         } 
-        update listOfAccountRecords;
+        if(!listOfAccountRecords.isEmpty()) {
+	    update listOfAccountRecords;
+	}
     }
 
     /**
@@ -91,7 +123,9 @@ public with sharing class PerformDMLandSOQLoperation {
                 updateList.add(newContact);
             }
         }
-        upsert updateList;
+        if(!updateList.isEmpty()){
+	    upsert updateList;
+	}
     }
 
     /**
