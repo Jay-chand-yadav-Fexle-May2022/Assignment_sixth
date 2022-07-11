@@ -202,7 +202,7 @@ public with sharing class PerformDMLandSOQLoperation {
         
         // Create the account and the opportunity.
         Database.SaveResult[] results = Database.insert(new SObject[] {
-            parentAccount, newOpportunity });
+            accountObj, newOpportunity });
         
         // Check results.
         for (Integer i = 0; i < results.size(); i++) {
