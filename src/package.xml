@@ -40,6 +40,7 @@
 	<members>StudentDataProvider</members>
 	<members>CountryCodeCountryNameStateNameDistricts</members>
         <members>InsertRecord</members>
+	<members>PerformDMLandSOQLoperation</members>
     </types>
     <types>
         <members>Assign_6__c</members>
