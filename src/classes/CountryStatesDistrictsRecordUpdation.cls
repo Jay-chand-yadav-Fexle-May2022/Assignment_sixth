@@ -84,8 +84,7 @@ public with sharing class CountryStatesDistrictsRecordUpdation {
 
         for(District__c district : listOfDistricts) {    
             if(!mapWithCountryWithStateWithDistrict.containsKey(district.State_Name__r.Country_Name__r.Name)) {
-                mapWithCountryWithStateWithDistrict.put(district.State_Name__r.Country_Name__r.Name,
-                new Map<String, List<String>>());
+                mapWithCountryWithStateWithDistrict.put(district.State_Name__r.Country_Name__r.Name,new Map<String, List<String>>());    
             }                                                
             if(!mapWithCountryWithStateWithDistrict.get(district.State_Name__r.Country_Name__r.Name).containsKey(district.State_Name__r.Name)) {
                 mapWithCountryWithStateWithDistrict.get(district.State_name__r.Country_Name__r.Name).put(district.State_Name__r.Name, new List<String>());
