@@ -86,15 +86,12 @@ public with sharing class CountryStatesDistrictsRecordUpdation {
             if(!mapWithCountryWithStateWithDistrict.containsKey(district.State_Name__r.Country_Name__r.Name)) {
                 mapWithCountryWithStateWithDistrict.put(district.State_Name__r.Country_Name__r.Name,
                 new Map<String, List<String>>());
-            }
-                                                        
+            }                                                
             if(!mapWithCountryWithStateWithDistrict.get(district.State_Name__r.Country_Name__r.Name).containsKey(district.State_Name__r.Name)) {
                 mapWithCountryWithStateWithDistrict.get(district.State_name__r.Country_Name__r.Name).put(district.State_Name__r.Name, new List<String>());
-            }
-                                                
+            }                                     
             if(!mapWithCountryWithStateWithDistrict.get(district.State_Name__r.Country_Name__r.Name).get(district.State_Name__r.Name).contains(district.Name)) {
                 mapWithCountryWithStateWithDistrict.get(district.State_Name__r.Country_Name__r.Name).get(district.State_Name__r.Name).add(district.Name);
-                
                 // Find out Country State and District starts with a particular Keyword.
                 if(district.State_Name__r.Country_Name__r.Name.startsWithIgnoreCase(word)) {
                     if(district.State_Name__r.Name.startsWithIgnoreCase(word)) {
@@ -111,13 +108,10 @@ public with sharing class CountryStatesDistrictsRecordUpdation {
     public static void findCountryStateAndDistrictStartWithParticularKeyword(String word) {
 
         if(!mapWithCountryWithStateWithDistrict.isEmpty()) {
-
             for(String country_1 : mapWithCountryWithStateWithDistrict.keySet()) {
                 if(country_1.startsWith(word.toUppercase())) {
-
                     for(String state_1 : mapWithCountryWithStateWithDistrict.get(country_1).keySet()) {             
                         if(state_1.startsWith(word.toUppercase())) {
-
                             for(String district_1 : mapWithCountryWithStateWithDistrict.get(country_1).get(state_1)) {
                                 if(district_1.startsWith(word.toUppercase())) {
                                     System.debug(country_1 + ' -> ' + state_1 + ' -> ' + district_1);
