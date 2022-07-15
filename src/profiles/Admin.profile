@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-	<fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Country__c.Country_Code__c</field>
         <readable>true</readable>
