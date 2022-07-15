@@ -71,8 +71,8 @@
 	<members>Year_Of_Class__c</members>
 	<members>Book__c</members>
 	<members>Country__c</members>
-    <members>District__c</members>
-    <members>State__c</members>
+    	<members>District__c</members>
+    	<members>State__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -94,8 +94,8 @@
 	<members>Year_Of_Class__c</members>
 	<members>Book__c</members>
 	<members>Country__c</members>
-    <members>District__c</members>
-    <members>State__c</members>
+    	<members>District__c</members>
+    	<members>State__c</members>
         <name>CustomTab</name>
     </types>
     <types>
