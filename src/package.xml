@@ -41,6 +41,8 @@
 	<members>CountryCodeCountryNameStateNameDistricts</members>
         <members>InsertRecord</members>
 	<members>PerformDMLandSOQLoperation</members>
+	<members>CountryStateJSONGenerator</members>
+    <members>CountryStatesDistrictsRecordUpdation</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -68,6 +70,9 @@
 	<members>Teacher1__c</members>
 	<members>Year_Of_Class__c</members>
 	<members>Book__c</members>
+	<members>Country__c</members>
+    	<members>District__c</members>
+    	<members>State__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -88,6 +93,9 @@
 	<members>Teacher1__c</members>
 	<members>Year_Of_Class__c</members>
 	<members>Book__c</members>
+	<members>Country__c</members>
+    	<members>District__c</members>
+    	<members>State__c</members>
         <name>CustomTab</name>
     </types>
     <types>
