@@ -14,9 +14,9 @@ public with sharing class AccountTriggerHandler {
         
         for(Account acc : listOfAccount) {
             Integer len = 14;
-			String str = string.valueof(Math.abs(Crypto.getRandomLong()));
-			System.debug(str);
-			String randomNumber = str.substring(0, len);
+	    String str = string.valueof(Math.abs(Crypto.getRandomLong()));
+	    System.debug(str);
+	    String randomNumber = str.substring(0, len);
             system.debug('Random Number-' + randomNumber);
 			
             if(acc.Type == 'Saving') {
