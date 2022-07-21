@@ -43,6 +43,8 @@
 	<members>PerformDMLandSOQLoperation</members>
 	<members>CountryStateJSONGenerator</members>
     <members>CountryStatesDistrictsRecordUpdation</members>
+	<members>AccountTriggerHandler</members>
+    <members>AccountTriggerHandlerTests</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -112,6 +114,7 @@
     </types>
     <types>
         <members>*</members>
+		<members>Trigger_Account_1</members>
         <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
