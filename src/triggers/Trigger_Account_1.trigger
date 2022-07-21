@@ -7,7 +7,7 @@
 *
 *  Revision Logs   :    V1.0 - Created - jay Chand Yadav
 **/
-trigger Trigger_Account_1 on Account (before insert, after insert) {
+trigger TriggerAccount on Account (before insert, after insert) {
 	
     if(Trigger.isInsert) {
     	if(Trigger.isBefore) 
