@@ -27,10 +27,8 @@ public with sharing class AccountTriggerHandler {
             }
         }
     }
-    
     // Send the mail of the user with the account details
-    public static void sendEmail(List<Account> listOfAccount) {
-	    
+    public static void sendEmail(List<Account> listOfAccount) {    
         List<Messaging.SingleEmailMessage> mails = new List<Messaging.SingleEmailMessage>();
         for(Account acc : listOfAccount) {
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
