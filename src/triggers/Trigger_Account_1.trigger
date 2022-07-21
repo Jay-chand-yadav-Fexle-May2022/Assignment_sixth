@@ -7,8 +7,8 @@
 *
 *  Revision Logs   :    V1.0 - Created - jay Chand Yadav
 **/
-trigger Trigger_Account_1 on Account (before insert) {
-
+trigger Trigger_Account_1 on Account (before insert, after insert) {
+	
     if(Trigger.isInsert) {
     	if(Trigger.isBefore) 
         {
@@ -18,5 +18,5 @@ trigger Trigger_Account_1 on Account (before insert) {
         if(Trigger.isAfter) {
         	AccountTriggerHandler.sendEmail(Trigger.New);
     	}
-    }
+    }  
 }
