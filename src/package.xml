@@ -114,7 +114,8 @@
     </types>
     <types>
         <members>*</members>
-	<members>Trigger_Account_1</members>
+	<members>Trigger_Account</members   
+	<members>TriggerAccount</members>
         <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
