@@ -112,8 +112,7 @@
         <members>*</members>
         <name>PermissionSet</name>
     </types>
-    <types>
-        <members>*</members>   
+    <types>   
 	<members>TriggerAccount</members>
         <name>ApexTrigger</name>
     </types>
