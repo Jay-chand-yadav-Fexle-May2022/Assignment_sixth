@@ -42,7 +42,9 @@
         <members>InsertRecord</members>
 	<members>PerformDMLandSOQLoperation</members>
 	<members>CountryStateJSONGenerator</members>
-    <members>CountryStatesDistrictsRecordUpdation</members>
+    	<members>CountryStatesDistrictsRecordUpdation</members>
+	<members>AccountTriggerHandler</members>
+    	<members>AccountTriggerHandlerTests</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -110,8 +112,8 @@
         <members>*</members>
         <name>PermissionSet</name>
     </types>
-    <types>
-        <members>*</members>
+    <types>   
+	<members>TriggerAccount</members>
         <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
