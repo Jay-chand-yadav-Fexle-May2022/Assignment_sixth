@@ -47,8 +47,6 @@ public class AccountTriggerHandlerTests {
             insert listOfAccount;
         Test.stopTest();
 	
-        List<Account> acc_1 = [SELECT Id, Email__c FROM Account WHERE Id IN: listOfAccount ORDER BY Name];
-        System.assert(acc_1[0].Email__c.equals('testing5@test.com'), 'Email address should be match');
-        System.assert(acc_1[1].Email__c.equals('testing6@test.com'), 'Email address should be match');
+        System.assertEquals(1, Limits.getEmailInvocations(), 'Emails should be sent');
     }
 }
