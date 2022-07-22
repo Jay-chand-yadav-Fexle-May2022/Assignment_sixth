@@ -28,7 +28,7 @@ public class AccountTriggerHandlerTests {
         listOfAccounts.add(new Account(Name = 'Account5', Type = 'FD',Email__c = 'testing4@fexle.com'));
 	
         Test.startTest();
-        insert listOfAccounts;
+            insert listOfAccounts;
         Test.stopTest();
         
         List<Account> acc = [SELECT Id, AccountNumber FROM Account WHERE Id IN:listOfAccounts ORDER BY Name];
@@ -44,7 +44,7 @@ public class AccountTriggerHandlerTests {
         listOfAccount.add(new Account(Name = 'Account7', Type = 'FD', Email__c = 'testing6@test.com'));
 	
         Test.startTest();
-        insert listOfAccount;
+            insert listOfAccount;
         Test.stopTest();
 	
         List<Account> acc_1 = [SELECT Id, Email__c FROM Account WHERE Id IN: listOfAccount ORDER BY Name];
