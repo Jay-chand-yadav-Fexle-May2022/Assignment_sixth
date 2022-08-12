@@ -9,10 +9,9 @@
 **/
 trigger Trigger_Opportunity on Opportunity (after insert, after update) {
 		
-    if(Trigger.isInsert || Trigger.isUpdate){
-        
+    if(Trigger.isInsert || Trigger.isUpdate){        
         if(Trigger.isAfter){
-			OpportunityTriggerHandler.fillRecordOnAutomobilesObjects(Trigger.new);
+	    OpportunityTriggerHandler.fillRecordOnAutomobilesObjects(Trigger.new);
         }
     } 
 }
