@@ -45,7 +45,7 @@
     	<members>CountryStatesDistrictsRecordUpdation</members>
 	<members>AccountTriggerHandler</members>
     	<members>AccountTriggerHandlerTests</members>
-		<members>OpportunityTriggerHandler</members>
+	<members>OpportunityTriggerHandler</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -76,7 +76,7 @@
 	<members>Country__c</members>
     	<members>District__c</members>
     	<members>State__c</members>
-		<members>Automobile_Presence_Sensor__c</members>
+	<members>Automobile_Presence_Sensor__c</members>
         <members>Automobile_Sensor__c</members>
         <members>Automobile_TDU__c</members>
         <members>Automobile_Tag__c</members>
@@ -103,7 +103,7 @@
 	<members>Country__c</members>
     	<members>District__c</members>
     	<members>State__c</members>
-		<members>Automobile_Presence_Sensor__c</members>
+	<members>Automobile_Presence_Sensor__c</members>
         <members>Automobile_Sensor__c</members>
         <members>Automobile_TDU__c</members>
         <members>Automobile_Tag__c</members>
