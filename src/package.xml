@@ -45,6 +45,7 @@
     	<members>CountryStatesDistrictsRecordUpdation</members>
 	<members>AccountTriggerHandler</members>
     	<members>AccountTriggerHandlerTests</members>
+		<members>OpportunityTriggerHandler</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -75,6 +76,10 @@
 	<members>Country__c</members>
     	<members>District__c</members>
     	<members>State__c</members>
+		<members>Automobile_Presence_Sensor__c</members>
+        <members>Automobile_Sensor__c</members>
+        <members>Automobile_TDU__c</members>
+        <members>Automobile_Tag__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -98,6 +103,11 @@
 	<members>Country__c</members>
     	<members>District__c</members>
     	<members>State__c</members>
+		<members>Automobile_Presence_Sensor__c</members>
+        <members>Automobile_Sensor__c</members>
+        <members>Automobile_TDU__c</members>
+        <members>Automobile_Tag__c</members>
+        <members>Opportunity</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -114,6 +124,7 @@
     </types>
     <types>   
 	<members>TriggerAccount</members>
+	<members>Trigger_Opportunity</members>
         <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
