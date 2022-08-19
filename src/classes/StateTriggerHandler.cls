@@ -19,7 +19,7 @@ public class StateTriggerHandler {
             }else{
                 mapOfCountryIds.put(state.Country_Name__c, 1);
             }
-		}       
+	}       
         List<Country__c> listOfCountries = [
             Select Id, Name, Total_Number_of_States__c 
             From Country__c 
