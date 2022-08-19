@@ -46,6 +46,8 @@
 	<members>AccountTriggerHandler</members>
     	<members>AccountTriggerHandlerTests</members>
 	<members>OpportunityTriggerHandler</members>
+	<members>DistrictTriggerHandler</members>
+    <members>StateTriggerHandler</members>
     </types>
     <types>
         <members>Assign_6__c</members>
@@ -125,7 +127,9 @@
     <types>   
 	<members>TriggerAccount</members>
 	<members>Trigger_Opportunity</members>
-        <name>ApexTrigger</name>
+	<members>Trigger_District</members>
+    <members>Trigger_State</members>
+    <name>ApexTrigger</name>
     </types>
     <version>53.0</version>
 </Package>
