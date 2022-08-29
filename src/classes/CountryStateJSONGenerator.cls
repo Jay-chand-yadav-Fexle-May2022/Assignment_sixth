@@ -20,6 +20,13 @@ public class CountryStateJSONGenerator {
     public class Districts{
         public string districtName{get; set;}
     }
+    
+    public class StatesDist{
+        public string stateName{get; set;}
+        public List<Districts> districts{get; set;}
+        public string stateCode{get; set;}               
+        public Integer totalDistricts{get; set;}
+    }
 
     public class Country{
         public String countryName{get; set;}
