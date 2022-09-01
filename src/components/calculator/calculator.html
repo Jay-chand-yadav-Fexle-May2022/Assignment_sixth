@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Simple Caculator" icon-name="standard:formula">   
+        <div class="calci">
+            <div>
+                <lightning-input type="number" label="First Number" class="operand" required></lightning-input>
+                <lightning-input type="number" label="Second Number" class="operand" required></lightning-input></br>
+            </div>          
+            <div class="btn-container">
+                <lightning-button-group>
+                    <lightning-button variant="brand" label="Add" onclick={handleAdd} class="button-for-action"></lightning-button>
+                    <lightning-button variant="brand" label="Subtract" onclick={handleSub} class="button-for-action"></lightning-button>
+                    <lightning-button variant="brand" label="Multiply" onclick={handleMul} class="button-for-action"></lightning-button> 
+                    <lightning-button variant="brand" label="Divide" onclick={handleDiv} class="button-for-action"></lightning-button>
+                </lightning-button-group>
+            </div></br>
+            <div class="operand">
+                <template if:true={showResult}>
+                    Result = {result}
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
