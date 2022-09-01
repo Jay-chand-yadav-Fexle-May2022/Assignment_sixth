@@ -131,7 +131,7 @@
     	<members>Trigger_State</members>
     	<name>ApexTrigger</name>
     </types>
-	<types>
+    <types>
         <members>calculator</members>
         <name>LightningComponentBundle</name>
     </types>
