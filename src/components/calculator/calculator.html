@@ -7,10 +7,10 @@
             </div>          
             <div class="btn-container">
                 <lightning-button-group>
-                    <lightning-button variant="brand" label="Add" onclick={handleAdd} class="button-for-action"></lightning-button>
-                    <lightning-button variant="brand" label="Subtract" onclick={handleSub} class="button-for-action"></lightning-button>
-                    <lightning-button variant="brand" label="Multiply" onclick={handleMul} class="button-for-action"></lightning-button> 
-                    <lightning-button variant="brand" label="Divide" onclick={handleDiv} class="button-for-action"></lightning-button>
+                    <lightning-button variant="brand" title="addition" label="Add" onclick={handleOperation} class="button-for-action"></lightning-button>
+                    <lightning-button variant="brand" title="subtract" label="Subtract" onclick={handleOperation} class="button-for-action"></lightning-button>
+                    <lightning-button variant="brand" title="multiply" label="Multiply" onclick={handleOperation} class="button-for-action"></lightning-button> 
+                    <lightning-button variant="brand" title="divide" label="Divide" onclick={handleOperation} class="button-for-action"></lightning-button>
                 </lightning-button-group>
             </div></br>
             <div class="operand">
