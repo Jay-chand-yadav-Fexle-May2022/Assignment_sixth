@@ -1,0 +1,62 @@
+<template> 
+   <lightning-card title="Display the Contact LWC" icon-name="standard:account">
+        <div class="slds-p-left_small">
+            <table>
+                <thead>
+                    <tr>
+                        <th >LastName</th>
+                        <th>Phone</th>                
+                        <th >Email</th>               
+                    </tr>
+                </thead>
+                <template for:each={contactList} for:item="accItem">
+                    <tr key={accItem.Id}>
+                        <td>{accItem.LastName}</td>
+                        <td>{accItem.Phone}</td>                  
+                        <td>{accItem.Email}</td>                  
+                    </tr>
+                </template>
+            </table>
+        </div>     
+    </lightning-card> 
+    <lightning-card title="Display the Opportunity LWC" icon-name="standard:opportunity">
+        <div class="slds-p-left_medium">
+            <table>
+                <thead>
+                    <tr>
+                        <th >Name</th>
+                        <th>CloseDate</th>                
+                        <th >StageName</th>               
+                    </tr>
+                </thead>
+                <template for:each={opportunityList} for:item="accItem">
+                    <tr key={accItem.Id}>
+                        <td>{accItem.Name}</td>
+                        <td>{accItem.CloseDate}</td>                  
+                        <td>{accItem.StageName}</td>                  
+                    </tr>
+                </template>
+            </table>
+        </div>     
+    </lightning-card>                 
+    <lightning-card title="Display the Case LWC" icon-name="standard:case">
+        <div class="slds-p-left_medium">
+            <table>
+                <thead>
+                    <tr>
+                        <th>CaseNumber</th>
+                        <th>Status</th>                
+                        <th >Priority</th>               
+                    </tr>
+                </thead>
+                <template for:each={caseList} for:item="accItem">
+                    <tr key={accItem.Id}>
+                        <td>{accItem.CaseNumber}</td>
+                        <td>{accItem.Status}</td>                  
+                        <td>{accItem.Priority}</td>                  
+                    </tr>
+                </template>
+            </table>
+        </div>     
+    </lightning-card>          
+</template>
