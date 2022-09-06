@@ -37,6 +37,5 @@ public with sharing class AccountRelated {
             FROM Case
             WHERE AccountId =: '0015h00000zs02xAAA'];
         return caseList;
-    }
-    
+    }    
 }
