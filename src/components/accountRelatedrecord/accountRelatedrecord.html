@@ -1,0 +1,31 @@
+<template> 
+    <lightning-card title="Display the Contact LWC" icon-name="standard:contact">      
+        <div style="height: 100px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={contactList}
+                    columns={conColumns}>
+            </lightning-datatable>
+        </div>        
+    </lightning-card>  
+
+    <lightning-card title="Display the Opportunity LWC" icon-name="standard:opportunity">      
+        <div style="height: 100px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={opportunityList}
+                    columns={oppColumns}>
+            </lightning-datatable>
+        </div>        
+    </lightning-card>  
+
+    <lightning-card title="Display the Case LWC" icon-name="standard:case">      
+        <div style="height: 100px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={caseList}
+                    columns={caseColumns}>
+            </lightning-datatable>
+        </div>        
+    </lightning-card>       
+</template>
