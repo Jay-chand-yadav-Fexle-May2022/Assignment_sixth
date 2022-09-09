@@ -137,6 +137,11 @@
         <members>calculator</members>
 		<members>accountRelatedrecord</members>
         <members>textMethod</members>
+		<members>childLwc</members>
+        <members>childWebComponent</members>
+        <members>parentLwc</members>
+        <members>parentWebComponent</members>
+        <name>LightningComponentBundle</name>
         <name>LightningComponentBundle</name>
     </types>
     <version>53.0</version>
