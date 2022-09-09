@@ -48,7 +48,7 @@
 	<members>OpportunityTriggerHandler</members>
 	<members>DistrictTriggerHandler</members>
     	<members>StateTriggerHandler</members>
-		<members>AccountRelated</members>
+	<members>AccountRelated</members>
         <members>Textmethod</members>
     </types>
     <types>
@@ -135,9 +135,9 @@
     </types>
     <types>
         <members>calculator</members>
-		<members>accountRelatedrecord</members>
+	<members>accountRelatedrecord</members>
         <members>textMethod</members>
-		<members>childLwc</members>
+	<members>childLwc</members>
         <members>childWebComponent</members>
         <members>parentLwc</members>
         <members>parentWebComponent</members>
