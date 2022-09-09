@@ -144,5 +144,9 @@
         <name>LightningComponentBundle</name>
         <name>LightningComponentBundle</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
     <version>53.0</version>
 </Package>
