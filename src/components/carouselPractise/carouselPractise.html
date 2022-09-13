@@ -1,0 +1,16 @@
+<template>
+    <lightning-carousel disable-auto-scroll>
+        <template if:true={players}>
+            <template for:each={players} for:item="footballer">
+                <lightning-carousel-image 
+                    key={footballer.id}
+                    src={footballer.src}
+                    header={footballer.header}
+                    description={footballer.description}
+                    alternative-text="Text"
+                    href={footballer.href}>                    
+                </lightning-carousel-image>
+            </template>
+        </template>
+    </lightning-carousel>
+</template>
