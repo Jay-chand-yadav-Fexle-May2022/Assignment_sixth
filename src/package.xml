@@ -141,7 +141,7 @@
         <members>childWebComponent</members>
         <members>parentLwc</members>
         <members>parentWebComponent</members>
-		<members>carouselPractise</members>
+	<members>carouselPractise</members>
         <members>childSlot</members>
         <members>parentSlot</members>
         <name>LightningComponentBundle</name>
