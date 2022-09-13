@@ -36,6 +36,26 @@
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>parentSlot</componentName>
+                <identifier>c_parentSlot</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>childSlot</componentName>
+                <identifier>c_childSlot</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region4</name>
+        <type>Region</type>
+    </flexiPageRegions>
     <masterLabel>Training</masterLabel>
     <template>
         <name>flexipage:appHomeTemplateThreeColumns</name>
