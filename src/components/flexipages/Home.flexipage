@@ -40,6 +40,16 @@
         <name>right</name>
         <type>Region</type>
     </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>carouselPractise</componentName>
+                <identifier>c_carouselPractise</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>left</name>
+        <type>Region</type>
+    </flexiPageRegions>
     <masterLabel>Home</masterLabel>
     <template>
         <name>home:desktopTemplateHeaderThreeColumns</name>
