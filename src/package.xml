@@ -50,7 +50,7 @@
     	<members>StateTriggerHandler</members>
 	<members>AccountRelated</members>
         <members>Textmethod</members>
-		<members>ContactRecord</members>
+	<members>ContactRecord</members>
     </types>
     <types>
         <members>Assign_6__c</members>
