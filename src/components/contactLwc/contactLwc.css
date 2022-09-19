@@ -1,0 +1,32 @@
+.LARGE {
+    padding: 23px;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid rgb(209 197 197);
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.dropdown {
+    margin-top: -24px;
+    width: 37px;
+    /* height: 21px; */
+}
+
+.MEDIUM {
+    padding: 23px;
+    width: 257px;
+    display: inline-block;
+    border: 1px solid rgb(209 197 197);
+    margin: 17px;
+    border-radius: 12px;
+}
+
+.SMALL {
+    padding: 26px;
+    width: 197px;
+    display: inline-block;
+    border: 1px solid rgb(209 197 197);
+    margin: 9px;
+    border-radius: 12px;
+}
