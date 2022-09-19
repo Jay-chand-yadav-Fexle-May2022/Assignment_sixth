@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Tile View Child">
+        <lightning-tile>
+            <template if:true={tempList}>
+                <template for:each={tempList} for:item="con" for:index="index">
+                    <div class={flexipageRegionWidth} key={con.Id}>
+                        <article class="slds-tile slds-hint-parent">
+                            <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+                                    <a href = {con.Url} target="_blank" >Test Contact {index}</a>
+                                </h3>
+                                <div class="dropdown">
+                                    <div class="slds-p-around_medium lgc-bg" style="width: 21px; height: 21px;">
+                                        <lightning-button-menu alternative-text="Show menu" class="dropdown">
+                                            <lightning-menu-item value="MenuItemOne" label="Edit">
+                                            </lightning-menu-item>
+                                            <lightning-menu-item value="MenuItemFour" label="Delete">
+                                            </lightning-menu-item>
+                                        </lightning-button-menu>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-tile__detail">
+                                <dl class="slds-list_horizontal slds-wrap">
+                                    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">
+                                        Id:</dt>
+                                    <dd class="slds-item_detail slds-truncate" title="Description for first label">
+                                        {con.Id}</dd>
+                                    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">
+                                        Name:</dt>
+                                    <dd class="slds-item_detail slds-truncate" title="Description for second label">
+                                        {con.Name}</dd>
+                                    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">
+                                        Phone:</dt>
+                                    <dd class="slds-item_detail slds-truncate" title="Description for first label">
+                                        {con.Phone}</dd>
+                                    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Fourth Label">
+                                        Title:</dt>
+                                    <dd class="slds-item_detail slds-truncate" title="Description for second label">
+                                        {con.Title}</dd>
+                                </dl>
+                            </div>
+                        </article>
+                    </div>
+                </template>
+            </template>
+        </lightning-tile>
+    </lightning-card>
+</template>
