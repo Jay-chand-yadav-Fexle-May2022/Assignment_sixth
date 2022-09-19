@@ -1,13 +1,13 @@
 <template>
     <lightning-card title="Tile View Child">
         <lightning-tile>
-            <template if:true={contactList.data}>
-                <template for:each={contactList.data} for:item="con" for:index="index">
+            <template if:true={tempList}>
+                <template for:each={tempList} for:item="con" for:index="index">
                     <div class={flexipageRegionWidth} key={con.Id}>
                         <article class="slds-tile slds-hint-parent">
                             <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
                                 <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
-                                    <a href="#">Test Contact {index}</a>
+                                    <a href = {con.Url} target="_blank" >Test Contact {index}</a>
                                 </h3>
                                 <div class="dropdown">
                                     <div class="slds-p-around_medium lgc-bg" style="width: 21px; height: 21px;">
