@@ -145,13 +145,17 @@
 	<members>carouselPractise</members>
         <members>childSlot</members>
         <members>parentSlot</members>
-		<members>contactLwc</members>
+	<members>contactLwc</members>
         <name>LightningComponentBundle</name>
         <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>*</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
     </types>
     <version>53.0</version>
 </Package>
