@@ -32,8 +32,9 @@ public with sharing class Records_PDF_Controller {
         System.debug('------stringStartDate ' + stringStartDate);
         System.debug('-------stringEndDate---' + stringEndDate);
         Transaction_Entry_List  = [SELECT Id, Name, Transaction_Date__c, Amount__c,  Type__c, Status__c 
-                                    FROM Transaction_Entry__c WHERE Contact__c = :idOfContacts AND CreatedDate >= :startDate AND CreatedDate <= :endDate];
-                                    System.debug('List Of Records'+Transaction_Entry_List);
+                                   FROM Transaction_Entry__c WHERE Contact__c = :idOfContacts 
+                                   AND CreatedDate >= :startDate AND CreatedDate <= :endDate];
+                                   System.debug('List Of Records'+Transaction_Entry_List);
 
         contact_Object = [SELECT Id, Title, Name , Email, Account_Number__c FROM Contact WHERE ID = :idOfContacts];
         System.debug('Contacts' +contact_Object);
