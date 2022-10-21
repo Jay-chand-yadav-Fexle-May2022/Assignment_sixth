@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Maximum_Debit_Allowed_per_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Debit Allowed per Day</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_Debit_Allowed_per_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Debit Allowed per Month</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_Debit_Allowed_per_Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Debit Allowed per Transaction</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_Transactions_Allowed_per_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Transactions Allowed per Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_Transactions_Allowed_per_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Transactions Allowed per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Transaction Limit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Transaction Limits Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Transaction Limits</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Maximum_Debit_Allowed_per_Day</fullName>
+        <active>false</active>
+        <description>Maximum debit allowed forty thousand</description>
+        <errorConditionFormula>40000 &gt;= Maximum_Debit_Allowed_per_Day__c</errorConditionFormula>
+        <errorDisplayField>Maximum_Debit_Allowed_per_Day__c</errorDisplayField>
+        <errorMessage>Debit Limit exceed more than forty thousand.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Maximum_Debit_Allowed_per_Month</fullName>
+        <active>false</active>
+        <description>Customer can not debit more than twelve lakh in a month</description>
+        <errorConditionFormula>1200000 &gt;= Maximum_Debit_Allowed_per_Month__c</errorConditionFormula>
+        <errorDisplayField>Maximum_Debit_Allowed_per_Month__c</errorDisplayField>
+        <errorMessage>Debit Limit exceed more than one million two hundred thousand</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Maximum_Debit_Allowed_per_Transaction</fullName>
+        <active>false</active>
+        <description>Maximum debit allowed twenty thousand per transaction.</description>
+        <errorConditionFormula>20000 &gt;= Maximum_Debit_Allowed_per_Transaction__c</errorConditionFormula>
+        <errorDisplayField>Maximum_Debit_Allowed_per_Transaction__c</errorDisplayField>
+        <errorMessage>Maximum debit allowed twenty thousand per transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Maximum_Transactions_Allowed_per_Day</fullName>
+        <active>false</active>
+        <description>Three maximum transaction allowed in a day</description>
+        <errorConditionFormula>3 &gt;= Maximum_Transactions_Allowed_per_Day__c</errorConditionFormula>
+        <errorDisplayField>Maximum_Transactions_Allowed_per_Day__c</errorDisplayField>
+        <errorMessage>Transaction limit exceed more than three times in a day</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Maximum_Transactions_Allowed_per_Month</fullName>
+        <active>false</active>
+        <description>Customer can not able to do transactions more than ninety times.</description>
+        <errorConditionFormula>90 &gt;= Maximum_Transactions_Allowed_per_Month__c</errorConditionFormula>
+        <errorDisplayField>Maximum_Transactions_Allowed_per_Month__c</errorDisplayField>
+        <errorMessage>Transaction limit exceed more than ninety times</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

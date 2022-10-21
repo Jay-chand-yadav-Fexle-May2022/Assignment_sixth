@@ -1,0 +1,32 @@
+<template>
+
+    <lightning-card title="Transaction Entries Records">
+
+        <lightning-input type="date" name="input5" label="Start Date" placeholder="Start Date..." required
+            value={startDate_Value} class="slds-m-horizontal_small" onchange={handle_Start_Date}></lightning-input>
+
+        <lightning-input type="date" name="input5" label="End Date" required value={endDate_Value}
+            class="slds-m-horizontal_small" onchange={handle_End_Date} placeholder="Start Date..."></lightning-input>
+
+        <!-- <lightning-button variant="brand" label="Download CSV" onclick={downloadCsvFile} class="csv"></lightning-button> -->
+        <div class="csv">
+            <lightning-button variant="brand" label="Download CSV" title="Primary action" onclick={downloadCsvFile}
+                style='margin-right:16px'></lightning-button>
+
+            <lightning-button variant="brand" label="Download PDF" title="Primary action" onclick={downloadPdfFile}
+                style='margin-right:16px'></lightning-button>
+
+            <lightning-button variant="brand" label="Email Statement (PDF)" title="Primary action"
+                onclick={handleEmail} style='margin-right:16px'></lightning-button>
+        </div>
+
+
+        <div slot="footer">
+            <lightning-button variant="brand" label="OK" onclick={handleClick} class="slds-m-right_small" type="submit">
+            </lightning-button>
+            <lightning-button variant="neutral" label="Cancel" onclick={closeAction}></lightning-button>
+        </div>
+
+    </lightning-card>
+
+</template>
