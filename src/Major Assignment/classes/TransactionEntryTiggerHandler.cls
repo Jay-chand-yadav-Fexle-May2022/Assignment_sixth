@@ -15,8 +15,8 @@
 public class TransactionEntryTiggerHandler {
 
     public static void transaction(List<Transaction_Entry__c> lstEntry){
-		//mapOfTransactionEntry
-		System.debug('lstEntry ======> ' + lstEntry);
+	//mapOfTransactionEntry
+	System.debug('lstEntry ======> ' + lstEntry);
 
         // Set of contact id only for debit type
         Set<Id> setOfDebitContactId = new Set<Id>();
