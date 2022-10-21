@@ -18,7 +18,10 @@ global class EmailOfTransactionEntriesRecord implements Schedulable  {
         // Map store contact ia as a id and store Entry record as a value
         Map<Id, List<Transaction_Entry__c>> mapOfTransactionEntry = new Map<Id, List<Transaction_Entry__c>>();
 
-        for(Transaction_Entry__c transEntry: [SELECT Id, Type__c, Amount__c, Contact__c, Transaction_Date__c FROM Transaction_Entry__c WHERE CALENDAR_MONTH(Transaction_Date__c) =: mnth AND status__c = 'Completed']){
+        for(Transaction_Entry__c transEntry: [
+		SELECT Id, Type__c, Amount__c, Contact__c, Transaction_Date__c FROM Transaction_Entry__c
+		WHERE CALENDAR_MONTH(Transaction_Date__c) =: mnth
+		AND status__c = 'Completed']){
             
             setOfConId.add(transEntry.contact__c);
 
@@ -41,7 +44,7 @@ global class EmailOfTransactionEntriesRecord implements Schedulable  {
             body = '<table border="1" style="border-collapse: collapse"><caption style="font-weight:bold;text-align: left;">Transaction Detail:<br/><br/></caption><tr><th>Account number</th><th>Type</th><th>Amount</th><th>Date</th></tr>';
             
             for(Transaction_Entry__c thisMonthEntryRecord: mapOfTransactionEntry.get(con.id)){
-				body += '<tr><td>'+ '&nbsp;' + con.Account_Number__c + '&nbsp;'  +'</td><td>' + '&nbsp;' + thisMonthEntryRecord.type__c + '&nbsp;' + '</td><td>' +  '&nbsp;&nbsp;' + thisMonthEntryRecord.Amount__c + '&nbsp;' +'</td><td>'+ '&nbsp;' + thisMonthEntryRecord.Transaction_Date__c + '&nbsp;'  + '</td></tr>';
+		body += '<tr><td>'+ '&nbsp;' + con.Account_Number__c + '&nbsp;'  +'</td><td>' + '&nbsp;' + thisMonthEntryRecord.type__c + '&nbsp;' + '</td><td>' +  '&nbsp;&nbsp;' + thisMonthEntryRecord.Amount__c + '&nbsp;' +'</td><td>'+ '&nbsp;' + thisMonthEntryRecord.Transaction_Date__c + '&nbsp;'  + '</td></tr>';
             }
             
             body += '</table>';
