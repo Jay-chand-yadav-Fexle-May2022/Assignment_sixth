@@ -1,0 +1,14 @@
+.csv{
+    display: none;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+.visibleCsv{
+    display: flex;
+
+}
+
+.hideButton{
+    display: none;
+}

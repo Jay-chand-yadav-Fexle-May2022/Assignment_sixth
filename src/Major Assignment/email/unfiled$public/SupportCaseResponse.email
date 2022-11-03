@@ -1,0 +1,12 @@
+Dear {!Contact.FirstName},
+
+we are very happy to inform you that your case has been closed.
+
+Thank you,
+
+{!User.Name}
+{!Organization.Name}
+
+Your comment:
+
+{!Case.Description}
